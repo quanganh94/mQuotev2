@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadingPanel"
+    android:layout_width="380dp"
+    android:layout_height="380dp"
+    android:gravity="center">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:rotation="90"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <com.loopj.android.image.SmartImageView
+        android:layout_width="280dp"
+        android:layout_height="380dp"
+        android:rotation="90"
+        android:id="@+id/img"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop">
+    </com.loopj.android.image.SmartImageView>
+</RelativeLayout>

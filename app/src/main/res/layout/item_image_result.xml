@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.loopj.android.image.SmartImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="260dp"
+    android:rotation="90"
+    android:id="@+id/img"
+    android:layout_centerInParent="true"
+    android:scaleType="centerCrop">
+</com.loopj.android.image.SmartImageView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mQuotev2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="done">Done Editting</string>
+    <string name="drawer_open">Share</string>
+    <string name="drawer_close">Close</string>
+
+</resources>

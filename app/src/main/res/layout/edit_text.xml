@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:background="#80000000">
+
+    <ImageView
+        android:id="@+id/et_background"
+        android:background="@drawable/start"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:text=""
+        android:textColor="#FFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="6"
+        android:shadowColor="#000"
+        android:textSize="25dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textCursorDrawable="@drawable/cursor"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:src="@drawable/done"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/done_edit_text"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:id="@+id/textView3"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/done_edit_text"
+            android:layout_toStartOf="@+id/done_edit_text"
+            android:textColor="#FFF"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter your text and we will find picture for you"
+        android:id="@+id/guide_text"
+        android:textColor="#80FFFFFF"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:textIsSelectable="false"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

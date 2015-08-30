@@ -1,0 +1,114 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="#3b465d"
+    android:focusable="true"
+    android:longClickable="true"
+    android:clickable="true"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+    android:id="@+id/layout_surface"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/include"
+    android:layout_alignParentTop="true">
+    <FrameLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <com.example.image.mquotev2.zoom.ImageZoomView
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+    </FrameLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <com.example.image.mquotev2.MagicTextView
+        android:visibility="invisible"
+        android:id="@+id/MTV"
+        android:text=""
+        android:textColor="#FFF"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+
+    <include
+        layout="@layout/layout_button"
+        android:layout_height="100dp"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:id="@+id/layout_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80000000"
+       android:visibility="visible">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="30dp">
+        <com.example.image.mquotev2.SingleScrollListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="270"
+            android:id="@+id/listView"
+            android:scrollingCache="true"
+            android:scrollbars="none"
+            android:dividerHeight="-80dp"
+            android:divider="#00000000"
+            android:alpha="200"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:background="#80FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+    <include
+
+        layout="@layout/edit_text"
+        android:layout_above="@+id/include"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"/>
+   <include
+       layout="@layout/edit_image"
+       android:layout_width="wrap_content"
+       android:layout_height="50dp"
+       android:layout_above="@+id/include"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/popup_bg"
+       android:layout_margin="10dp"/>
+
+</RelativeLayout>
+<include layout="@layout/right_side_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"/>
+</android.support.v4.widget.DrawerLayout>
